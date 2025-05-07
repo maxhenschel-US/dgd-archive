@@ -1,1 +1,1 @@
-console.log("Your Name - GitHub: yourhandle - Email: you@example.com");
+console.log("Max Henschel - GitHub: maxhenschel-us - Email: maxhenschel@alum.calarts.edu");
