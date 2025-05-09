@@ -3,9 +3,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #222;  /* dark gray instead of white */
   color: #111;
 }
+
 
 /* HEADER + FOOTER */
 header, footer {
@@ -50,12 +51,14 @@ nav a:hover {
   justify-content: center;
   box-sizing: border-box;
 
+  background-color: #222; /* dark gray fallback */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
+
 
 /* FADE-IN CLASS (added by JS) */
 .section.visible {
@@ -65,12 +68,9 @@ nav a:hover {
 
 /* OVERLAY FOR READABILITY */
 .section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
+  content: none;
 }
+
 
 /* HEADINGS */
 .section-title {
@@ -170,19 +170,19 @@ nav a:hover {
   opacity: 1;
 }
 
-/* SECTION BACKGROUND IMAGES */
+/* SECTION BACKGROUND IMAGES - updated for .jpg extensions */
 .and-so-on-bg {
-  background-image: url('../images/bg-and-so-on.png');
+  background-image: url('../images/bg-and-so-on.jpg');
 }
 
 .archive-bg {
-  background-image: url('../images/bg-archive.png');
+  background-image: url('../images/bg-archive.jpg');
 }
 
 .make-bg {
-  background-image: url('../images/bg-make.png');
+  background-image: url('../images/bg-make.jpg');
 }
 
 .find-bg {
-  background-image: url('../images/bg-find.png');
+  background-image: url('../images/bg-find.jpg');
 }
