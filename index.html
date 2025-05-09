@@ -88,7 +88,35 @@
 
   <p>Email: <a href="mailto:maxhenschel@gmail.com">maxhenschel@gmail.com</a></p>
   <p>GitHub: <a href="https://github.com/maxhenschel-us" target="_blank">maxhenschel-us</a></p>
-</section>
+<!-- Contact Button -->
+<button id="contactBtn" class="contact-button">Contact</button>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" id="closeModal">&times;</span>
+    <form
+      action="https://formspree.io/f/xpwdlroz"
+      method="POST"
+      class="contact-form"
+    >
+      <label for="email">Your email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Your message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+  </section>
 
 
 <script src="js/script.js"></script>

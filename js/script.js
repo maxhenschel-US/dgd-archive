@@ -19,3 +19,22 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
+
+// Contact Modal Logic
+const modal = document.getElementById("contactModal");
+const btn = document.getElementById("contactBtn");
+const closeBtn = document.getElementById("closeModal");
+
+btn.onclick = () => {
+  modal.style.display = "block";
+};
+
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
