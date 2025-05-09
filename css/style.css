@@ -1,19 +1,188 @@
+/* GENERAL LAYOUT + FONT */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #111;
 }
+
+/* HEADER + FOOTER */
 header, footer {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
 }
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 0.5em 0;
+  text-align: center;
+  z-index: 1000;
+}
+
 nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
-main {
-    padding: 20px;
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SCROLL SECTIONS */
+.section {
+  min-height: 100vh;
+  padding: 120px 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+/* FADE-IN CLASS (added by JS) */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* OVERLAY FOR READABILITY */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* HEADINGS */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  width: 75%;
+  margin-left: 40px;
+}
+
+/* PARAGRAPH TEXT */
+.section p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  width: 75%;
+  margin-left: 40px;
+}
+
+/* EMBEDDED IMAGES (OPTIONAL) */
+.section img {
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* BANDCAMP EMBEDS */
+.bandcamp-embed {
+  width: 75%;
+  height: 120px;
+  margin-left: 40px;
+  margin-top: 2rem;
+  border: none;
+  display: block;
+}
+
+/* LISTEN LINKS */
+.listen-links {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 40px;
+  margin-top: 1rem;
+}
+
+.listen-links li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.listen-links a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.listen-links a:hover {
+  color: #666;
+}
+
+/* STYLIZED HYPERLINKS */
+.styled-link {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.styled-link:hover {
+  color: #555;
+  border-bottom: 1px solid #555;
+  letter-spacing: 0.5px;
+}
+
+.styled-link:visited {
+  color: #999;
+  border-bottom: 1px solid #999;
+}
+
+/* MOOD COLLAGE IMAGES */
+.mood-collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 40px;
+  margin-top: 2rem;
+}
+
+.mood-collage img {
+  width: 30%;
+  min-width: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.mood-collage img:hover {
+  opacity: 1;
+}
+
+/* SECTION BACKGROUND IMAGES */
+.and-so-on-bg {
+  background-image: url('images/bg-and-so-on.png');
+}
+
+.archive-bg {
+  background-image: url('images/bg-archive.png');
+}
+
+.make-bg {
+  background-image: url('images/bg-make.png');
+}
+
+.find-bg {
+  background-image: url('images/bg-find.png');
 }
