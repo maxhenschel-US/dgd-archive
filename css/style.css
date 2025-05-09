@@ -172,17 +172,17 @@ nav a:hover {
 
 /* SECTION BACKGROUND IMAGES */
 .and-so-on-bg {
-  background-image: url('images/bg-and-so-on.png');
+  background-image: url('../images/bg-and-so-on.png');
 }
 
 .archive-bg {
-  background-image: url('images/bg-archive.png');
+  background-image: url('../images/bg-archive.png');
 }
 
 .make-bg {
-  background-image: url('images/bg-make.png');
+  background-image: url('../images/bg-make.png');
 }
 
 .find-bg {
-  background-image: url('images/bg-find.png');
+  background-image: url('../images/bg-find.png');
 }
