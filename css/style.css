@@ -1,4 +1,4 @@
-/* GENERAL LAYOUT + FONT */
+/* Layout + font */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 
-/* HEADER + FOOTER */
+/* Header & footer */
 header, footer {
   background-color: #333;
   color: white;
@@ -16,7 +16,7 @@ header, footer {
   text-align: center;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -39,7 +39,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* SCROLL SECTIONS */
+/* Scroll sections */
 .section {
   min-height: 100vh;
   padding: 120px 40px;
@@ -60,19 +60,19 @@ nav a:hover {
 }
 
 
-/* FADE-IN CLASS (added by JS) */
+/* Fade in */
 .section.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* OVERLAY FOR READABILITY */
+/* Background overlay */
 .section::before {
   content: none;
 }
 
 
-/* HEADINGS */
+/* Headings */
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -82,7 +82,7 @@ nav a:hover {
   margin-left: 40px;
 }
 
-/* PARAGRAPH TEXT */
+/* Paragraph text */
 .section p {
   font-size: 1.3rem;
   line-height: 1.7;
@@ -90,13 +90,13 @@ nav a:hover {
   margin-left: 40px;
 }
 
-/* EMBEDDED IMAGES (OPTIONAL) */
+/* Embedded images */
 .section img {
   max-width: 100%;
   margin-top: 1.5rem;
 }
 
-/* BANDCAMP EMBEDS */
+/* Bandcamp embeds */
 .bandcamp-embed {
   width: 75%;
   height: 120px;
@@ -106,7 +106,7 @@ nav a:hover {
   display: block;
 }
 
-/* LISTEN LINKS */
+/* Listen links */
 .listen-links {
   list-style: none;
   padding-left: 0;
@@ -128,7 +128,7 @@ nav a:hover {
   color: #666;
 }
 
-/* STYLIZED HYPERLINKS */
+/* Stiled links */
 .styled-link {
   color: #111;
   text-decoration: none;
@@ -148,7 +148,7 @@ nav a:hover {
   border-bottom: 1px solid #999;
 }
 
-/* MOOD COLLAGE IMAGES */
+/* Mood collage images */
 .mood-collage {
   display: flex;
   flex-wrap: wrap;
@@ -170,7 +170,7 @@ nav a:hover {
   opacity: 1;
 }
 
-/* SECTION BACKGROUND IMAGES - updated for .jpg extensions */
+/* Section backgrounds */
 .and-so-on-bg {
   background-image: url('../images/bg-and-so-on.jpg');
 }
