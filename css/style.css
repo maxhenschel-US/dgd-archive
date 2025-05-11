@@ -247,3 +247,24 @@ nav a:hover {
   background-color: #333;
 }
 
+/* Home section */
+.home-bg {
+  background-image: url('../images/bg-home.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 10em 1em;
+  color: white;
+}
+
+.home-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.home-intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  color: #ccc;
+}
